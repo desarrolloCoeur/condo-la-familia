@@ -1,0 +1,18 @@
+---
+---
+<div class="fixed left-1 bottom-4 md:left-8 md:bottom-8 w-full z-10 hidden" id="whatsapp"> 
+    <a href="tel:+523222940241" class="text-white border border-2 py-3 px-6 text-xl font-bold bg-[#144bab] hover:bg-white hover:text-[#144bab]"><i class="fa-regular fa-calendar px-1"></i> RESERVE</a>
+</div>
+
+
+<script>
+    const whatsappButton = document.querySelector('#whatsapp')
+    
+    window.addEventListener("scroll", () => {
+        if(window.scrollY > 720){
+            whatsappButton.classList.remove("hidden");
+        } else {
+            whatsappButton.classList.add("hidden")
+        }
+    })
+</script>
