@@ -65,6 +65,9 @@ import Banner from '../components/Banner.astro'
 								<i class="fa-solid fa-ruler-combined text-[#144bab] text-3xl"></i>
 								<p>2,850 sq. ft.</p>
 							</div>
+							<div class="flex gap-6 pt-6">
+								<a href="pdf/G 12 floorplan with 3rd bed.pdf" target="_blank" class="text-white border border-2 py-3 px-6 text-xl font-bold bg-[#144bab] hover:bg-white hover:text-[#144bab]">Floor Plan</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -96,11 +99,43 @@ import Banner from '../components/Banner.astro'
 		</section>
 
 
+		<!-- Donde dormiras -->
+		<section class="container w-11/12 mx-auto lg:mb-32 mb-12">
+			<h1 class="text-center text-[#144bab] font-bold text-5xl uppercase mb-10 ">Where you'll sleep?</h1>
+			<div class="grid lg:grid-cols-4 grid-cols-1 gap-6">
+				<div>
+					<img class="w-full h-[35vh] object-cover object-center"
+					src="images/gallery-5.webp"/>
+					<h2 class="font-bold text-xl pt-3">MASTER BEDROOM</h2>
+					<p class="lg:text-lg text-base font-light">Sleeps 2 on King Bed, Master Bathroom, Air-Conditioning</p>
+				</div>
+				<div>
+					<img class="w-full h-[35vh] object-cover object-center"
+					src="images/gallery-10.webp"/>
+					<h2 class="font-bold text-xl pt-3">GUEST ROOM 2</h2>
+					<p class="lg:text-lg text-base font-light">Sleeps 2 on Single twin Beds and up to 2 children on Sofa, Guest Bathroom, Air-Conditioning</p>
+				</div>
+				<div>
+					<img class="w-full h-[35vh] object-cover object-center"
+					src="images/gallery-9.webp"/>
+					<h2 class="font-bold text-xl pt-3">GUEST ROOM 3</h2>
+					<p class="lg:text-lg text-base font-light">Sleeps 2 (up to 4) on Two Queen Bed, Guest Bathroom, Air-Conditioning</p>
+				</div>
+				<div>
+					<img class="w-full h-[35vh] object-cover object-center"
+					src="images/gallery-7.webp"/>
+					<h2 class="font-bold text-xl pt-3">Mini Flex ROOM 4</h2>
+					<p class="lg:text-lg text-base font-light">Sleeps 1 on 1 Single Bed, Guest Bathroom</p>
+				</div>
+			</div>
+		</section>
+
+
 		<!-- Features & Amenitites -->
 		<section class="container w-11/12 mx-auto">
 			<div class="flex flex-wrap justify-center sm:flex-nowrap gap-10 flex-col-reverse sm:flex-row">
 				<div class="sm:w-1/2">
-					<img class="w-full lg:h-[80vh] h-[50vh] object-cover object-center"
+					<img class="w-full lg:h-[90vh] h-[50vh] object-cover object-center"
 					src="images/20140826-5Z8A9545.webp"/>
 				</div>
 				<div class="sm:w-1/2 my-auto">
@@ -108,7 +143,7 @@ import Banner from '../components/Banner.astro'
 						Features<br> <span class="font-[cherolina] normal-case text-7xl font-light">& Amenities </span>
 					</h1>
 					<div class="text-center text-xl mt-5 mb-5 ">
-						<div class="grid lg:grid-cols-3 grid-cols-2 justify-content-center gap-12">
+						<div class="grid lg:grid-cols-4 grid-cols-2 justify-content-center gap-12">
 							<div>
 								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-filled/50/146ebe/golf.png" alt="golf"/>
 								<p class="mt-3">Golf Membership</p>
@@ -119,15 +154,11 @@ import Banner from '../components/Banner.astro'
 							</div>
 							<div class="">
 								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-filled/50/146ebe/golf-cart.png" alt="golf-cart"/>
-								<p>Golf Car</p>
-							</div>
-							<div>
-								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-filled/50/146ebe/tv.png" alt="tv"/>
-								<p class="mt-3">TV</p>
+								<p>6 Seater Golf Cart Included</p>
 							</div>
 							<div>
 								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-filled/50/146ebe/wifi--v1.png" alt="wifi--v1"/>
-								<p class="mt-3">Wifi</p>
+								<p class="mt-3">High Speed WI FI</p>
 							</div>
 							<div>
 								<img  class="mx-auto"width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/146ebe/beach.png" alt="beach"/>
@@ -136,6 +167,26 @@ import Banner from '../components/Banner.astro'
 							<div>
 								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-filled/50/146ebe/golf-ball.png" alt="golf-ball"/>
 								<p class="mt-3">Golf Views</p>
+							</div>
+							<div>
+								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-filled/50/146ebe/tv.png" alt="tv"/>
+								<p class="mt-3">TV</p>
+							</div>
+							<div>
+								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/146ebe/grill--v2.png" alt="grill--v2"/>
+								<p class="mt-3">BBQ Grill</p>
+							</div>
+							<div>
+								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-filled/50/146ebe/dining-room.png" alt="dining-room"/>
+								<p class="mt-3">Outdoor Dining</p>
+							</div>
+							<div>
+								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/146ebe/conference-call--v1.png" alt="conference-call--v1"/>
+								<p class="mt-3">Sleeps Up to 8 Guests (6 adults MAX)</p>
+							</div>
+							<div>
+								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/146ebe/housekeeping.png" alt="housekeeping"/>
+								<p class="mt-3">Daily Housekeeping Service</p>
 							</div>
 						</div>
 					</div>
