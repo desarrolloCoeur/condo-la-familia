@@ -1,33 +1,13 @@
 ---
 
 ---
-<style is:global>
-    @font-face{
-        font-family: 'cherolina';
-        src: url('/fonts/Cherolina.ttf');  
-        
-    }
-    h3{
-        font-family: cherolina;
-    }
 
-
-    @font-face{
-        font-family: 'caviardreams';
-        src: url('/fonts/CaviarDreams.ttf');
-    }
-    p, a{
-        font-family: caviardreams;
-    }
-</style>
-
-
-<header class="bg-[#e2e3e6] pt-8 pb-8 fixed w-full z-20">
+<header class="pt-8 pb-8 fixed w-full z-20" id="header">
     <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-10 items-center justify-between">
-            <div class="flex-1 md:flex md:items-center md:gap-12">
+            <div class="flex-1 md:flex md:items-center md:gap-12 ">
                 <a class="block" href="/">
-                    <img class="h-28" src="images/condo.png" alt="Logo Condo La Familia">
+                    <img class="h-20" src="images/condo.png" alt="Logo Condo La Familia">
                 </a>
             </div>
             <div class="md:flex md:items-center md:gap-12">
@@ -53,7 +33,7 @@
             </div>
         </div>
     </div>
-    <nav id="menu" class="hidden h-screen items-start pt-20">
+    <nav id="menu" class="hidden h-screen items-center bg-[#e2e3e6] mt-[-75px]">
         <ul class="flex gap-6 uppercase text-xl flex-col justify-center items-center">
             <li>
                 <a class="text-[#144bab] transition hover:text-[#5375b7]" href="/">Home</a>
@@ -71,41 +51,10 @@
                 <a class="text-[#144bab] transition hover:text-[#5375b7] text-2xl" href="tel:+523222940241"><i class="fa-solid fa-phone"></i></a>
             </li>
             <li>
-                <a class="text-[#144bab] transition hover:text-[#5375b7] text-2xl" href="https://api.whatsapp.com/send?phone=523222940241" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a class="text-[#144bab] transition hover:text-[#5375b7] text-2xl" href="https://wa.me/523222940241?text=Hola,%20estoy%20interesado%20en%20reservar%20condo%20la%20familia" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
             </li>
         </ul>
     </nav>
 </header>
 
 
-<script type="text/javascript">
-    const btnMenu = document.querySelector("#btnMenu");
-    const menu = document.querySelector("#menu");
-    const menuLinks = document.querySelectorAll("#menu a")
-    let isActive = false;
-
-    btnMenu.addEventListener("click", (e) => {
-        e.preventDefault();
-
-        if (!isActive) {
-            menu.classList.add("flex", "justify-center")
-            menu.classList.remove("hidden");
-            isActive = true;
-            btnMenu.innerHTML = `<i class="fa-solid fa-xmark"></i>`
-        } else {
-            menu.classList.remove("flex", "justify-center")
-            menu.classList.add("hidden");
-            isActive = false;
-            btnMenu.innerHTML = `<i class="fa-solid fa-bars"></i>`
-        }
-
-    })
-    menuLinks.forEach((link) => {
-        link.addEventListener("click", (e) => {
-            menu.classList.remove("flex", "justify-center")
-            menu.classList.add("hidden");
-            isActive = false;
-            btnMenu.innerHTML = `<i class="fa-solid fa-bars"></i>`
-        })
-    })
-</script>
