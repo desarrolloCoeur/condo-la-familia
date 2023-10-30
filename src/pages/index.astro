@@ -9,18 +9,38 @@ import Banner from "../components/Banner.astro";
 
         <!-- NOSOTROS -->
         <section class="container w-11/12 mx-auto lg:py-32 py-12" id="nosotros">
-            <div class="flex flex-wrap justify-center sm:flex-nowrap gap-10 flex-col-reverse sm:flex-row">
+            <div
+                class="flex flex-wrap justify-center sm:flex-nowrap gap-10 flex-col-reverse sm:flex-row"
+            >
                 <div class="sm:w-1/2">
-                    <img class="w-full lg:h-[80vh] h-[50vh] object-cover object-center" src="images/gallery-21.webp"/>
+                    <img
+                        class="w-full lg:h-[80vh] h-[50vh] object-cover object-center"
+                        src="images/gallery-21.webp"
+                    />
                 </div>
                 <div class="sm:w-1/2 my-auto">
-                    <h1 class="text-center text-[#144bab] font-bold text-5xl uppercase mb-10">
+                    <h1
+                        class="text-center text-[#144bab] font-bold text-5xl uppercase mb-4"
+                    >
                         Condo <br />
-                        <span class="font-[cherolina] normal-case font-light text-7xl">
+                        <span
+                            class="font-[cherolina] normal-case font-light text-7xl"
+                        >
                             La Familia
                         </span>
                     </h1>
-                    <p class="tracking-wide text-lg font-light text-justify lg:mx-16 mx-auto">
+					<div class="flex gap-5 flex-row flex-wrap items-center justify-center mb-10">
+						<a href="https://www.airbnb.es/rooms/50846504?preview_for_ml=true&source_impression_id=p3_1698183432_Efb8RwLQPh0BWCd6" target="_blank">
+							<img src="images/airbnb.png" class="h-16">
+						</a>
+
+						<a href="https://www.vrbo.com/2264770?dateless=true&" target="_blank">
+							<img src="images/vrbo.png" class="h-16">
+						</a>
+					</div>
+                    <p
+                        class="tracking-wide text-lg font-light text-justify lg:mx-16 mx-auto"
+                    >
                         Nested in the heart of Punta Mita, this complete and
                         spacious 3 + bedroom unit is everything you need for a
                         more that pleasant family vacation at this unique
@@ -38,47 +58,72 @@ import Banner from "../components/Banner.astro";
 
         <!-- Las terrazas -->
         <section class="container w-11/12 mx-auto">
-            <div class="flex flex-wrap justify-center sm:flex-nowrap gap-10 flex-col sm:flex-row">
+            <div
+                class="flex flex-wrap justify-center sm:flex-nowrap gap-10 flex-col sm:flex-row"
+            >
                 <div class="sm:w-1/3 text-center my-auto">
-                    <h1 class="mb-1 text-3xl lg:text-4xl font-bold text-[#144bab]">
-                        Las Terrazas,<br> Punta Mita
+                    <h1
+                        class="mb-1 text-3xl lg:text-4xl font-bold text-[#144bab]"
+                    >
+                        Las Terrazas,<br /> Punta Mita
                     </h1>
                     <div class="w-full bg-black h-px my-6"></div>
-                    <div class="text-black flex flex-col items-center justify-center text-lg font-light">
-                            <div class="flex gap-6 py-3">
-                                <i class="fa-solid fa-bed text-[#144bab] text-3xl"></i>
-                                <p>3 + Bedrooms</p>
-                            </div>
-                            <div class="flex gap-6 py-3">
-                                <i class="fa-solid fa-bath text-[#144bab] text-3xl"></i>
-                                <p>4.5 Bathrooms</p>
-                            </div>
-                            <div class="flex gap-6 py-3">
-                                <i class="fa-solid fa-user text-[#144bab] text-3xl"></i>
-                                <p>8 Guests</p>
-                            </div>
-                            <div class="flex gap-6 py-3">
-                                <i class="fa-solid fa-moon text-[#144bab] text-3xl"></i>
-                                <p>5 Nights Min Stay</p>
-                            </div>
-                            <div class="flex gap-6 py-3">
-                                <i class="fa-solid fa-ruler-combined text-[#144bab] text-3xl"></i>
-                                <p>2,850 sq. ft.</p>
-                            </div>
-                            <div class="flex gap-6 pt-6">
-								<a href="pdf/G 12 floorplan with 3rd bed.pdf" target="_blank" class="text-white border-2 py-3 px-6 text-xl font-bold bg-[#144bab] hover:bg-white hover:text-[#144bab]">Floor Plan</a>
-							</div>
+                    <div
+                        class="text-black flex flex-col items-center justify-center text-lg font-light"
+                    >
+                        <div class="flex gap-6 py-3">
+                            <i class="fa-solid fa-bed text-[#144bab] text-3xl"
+                            ></i>
+                            <p>3 + Bedrooms</p>
+                        </div>
+                        <div class="flex gap-6 py-3">
+                            <i class="fa-solid fa-bath text-[#144bab] text-3xl"
+                            ></i>
+                            <p>4.5 Bathrooms</p>
+                        </div>
+                        <div class="flex gap-6 py-3">
+                            <i class="fa-solid fa-user text-[#144bab] text-3xl"
+                            ></i>
+                            <p>8 Guests</p>
+                        </div>
+                        <div class="flex gap-6 py-3">
+                            <i class="fa-solid fa-moon text-[#144bab] text-3xl"
+                            ></i>
+                            <p>5 Nights Min Stay</p>
+                        </div>
+                        <div class="flex gap-6 py-3">
+                            <i
+                                class="fa-solid fa-ruler-combined text-[#144bab] text-3xl"
+                            ></i>
+                            <p>2,850 sq. ft.</p>
+                        </div>
+                        <div class="flex gap-6 pt-6">
+                            <a
+                                href="pdf/G 12 floorplan with 3rd bed.pdf"
+                                target="_blank"
+                                class="text-white border-2 py-3 px-6 text-xl font-bold bg-[#144bab] hover:bg-white hover:text-[#144bab]"
+                                >Floor Plan</a
+                            >
+                        </div>
                     </div>
                 </div>
                 <div class="sm:w-2/3">
-                    <img class="w-full lg:h-[80vh] h-[50vh] object-cover object-center" src="images/gallery-11.webp"/>
+                    <img
+                        class="w-full lg:h-[80vh] h-[50vh] object-cover object-center"
+                        src="images/gallery-11.webp"
+                    />
                 </div>
             </div>
         </section>
 
         <!-- Available services -->
-        <section class="w-full lg:my-32 my-12 h-[400px] flex justify-center items-center" id="promotional">
-            <h4 class="text-2xl lg:text-3xl text-white text-center font-bold lg:w-[60vw] w-[80vw]">
+        <section
+            class="w-full lg:my-32 my-12 h-[400px] flex justify-center items-center"
+            id="promotional"
+        >
+            <h4
+                class="text-2xl lg:text-3xl text-white text-center font-bold lg:w-[60vw] w-[80vw]"
+            >
                 Available services with Property Rentals <br />
                 <p class="lg:text-lg text-base font-light pt-6 pb-3">
                     Personalized condo orientation tour.
@@ -98,102 +143,201 @@ import Banner from "../components/Banner.astro";
             </h4>
         </section>
 
+        <!-- Donde dormiras -->
+        <section class="container w-11/12 mx-auto lg:mb-32 mb-12">
+            <h1
+                class="text-center text-[#144bab] font-bold text-5xl uppercase mb-10"
+            >
+                Where you'll sleep?
+            </h1>
+            <div class="grid lg:grid-cols-4 grid-cols-1 gap-6">
+                <div>
+                    <img
+                        class="w-full h-[35vh] object-cover object-center"
+                        src="images/gallery-5.webp"
+                    />
+                    <h2 class="font-bold text-xl pt-3">MASTER BEDROOM</h2>
+                    <p class="lg:text-lg text-base font-light">
+                        Sleeps 2 on King Bed, Master Bathroom, Air-Conditioning
+                    </p>
+                </div>
+                <div>
+                    <img
+                        class="w-full h-[35vh] object-cover object-center"
+                        src="images/gallery-10.webp"
+                    />
+                    <h2 class="font-bold text-xl pt-3">GUEST ROOM 2</h2>
+                    <p class="lg:text-lg text-base font-light">
+                        Sleeps 2 on Single twin Beds and up to 2 children on
+                        Sofa, Guest Bathroom, Air-Conditioning
+                    </p>
+                </div>
+                <div>
+                    <img
+                        class="w-full h-[35vh] object-cover object-center"
+                        src="images/gallery-9.webp"
+                    />
+                    <h2 class="font-bold text-xl pt-3">GUEST ROOM 3</h2>
+                    <p class="lg:text-lg text-base font-light">
+                        Sleeps 2 (up to 4) on Two Queen Bed, Guest Bathroom,
+                        Air-Conditioning
+                    </p>
+                </div>
+                <div>
+                    <img
+                        class="w-full h-[35vh] object-cover object-center"
+                        src="images/gallery-7.webp"
+                    />
+                    <h2 class="font-bold text-xl pt-3">Mini Flex ROOM 4</h2>
+                    <p class="lg:text-lg text-base font-light">
+                        Sleeps 1 on 1 Single Bed, Guest Bathroom
+                    </p>
+                </div>
+            </div>
+        </section>
 
-		<!-- Donde dormiras -->
-		<section class="container w-11/12 mx-auto lg:mb-32 mb-12">
-			<h1 class="text-center text-[#144bab] font-bold text-5xl uppercase mb-10 ">Where you'll sleep?</h1>
-			<div class="grid lg:grid-cols-4 grid-cols-1 gap-6">
-				<div>
-					<img class="w-full h-[35vh] object-cover object-center"
-					src="images/gallery-5.webp"/>
-					<h2 class="font-bold text-xl pt-3">MASTER BEDROOM</h2>
-					<p class="lg:text-lg text-base font-light">Sleeps 2 on King Bed, Master Bathroom, Air-Conditioning</p>
-				</div>
-				<div>
-					<img class="w-full h-[35vh] object-cover object-center"
-					src="images/gallery-10.webp"/>
-					<h2 class="font-bold text-xl pt-3">GUEST ROOM 2</h2>
-					<p class="lg:text-lg text-base font-light">Sleeps 2 on Single twin Beds and up to 2 children on Sofa, Guest Bathroom, Air-Conditioning</p>
-				</div>
-				<div>
-					<img class="w-full h-[35vh] object-cover object-center"
-					src="images/gallery-9.webp"/>
-					<h2 class="font-bold text-xl pt-3">GUEST ROOM 3</h2>
-					<p class="lg:text-lg text-base font-light">Sleeps 2 (up to 4) on Two Queen Bed, Guest Bathroom, Air-Conditioning</p>
-				</div>
-				<div>
-					<img class="w-full h-[35vh] object-cover object-center"
-					src="images/gallery-7.webp"/>
-					<h2 class="font-bold text-xl pt-3">Mini Flex ROOM 4</h2>
-					<p class="lg:text-lg text-base font-light">Sleeps 1 on 1 Single Bed, Guest Bathroom</p>
-				</div>
-			</div>
-		</section>
-
-
-		<!-- Features & Amenitites -->
-		<section class="container w-11/12 mx-auto">
-			<div class="flex flex-wrap justify-center sm:flex-nowrap gap-10 flex-col-reverse sm:flex-row">
-				<div class="sm:w-1/2">
-					<img class="w-full lg:h-[90vh] h-[50vh] object-cover object-center"
-					src="images/amenities/gallery-20.webp"/>
-				</div>
-				<div class="sm:w-1/2 my-auto">
-					<h1 class="text-center text-[#144bab] font-bold text-5xl uppercase mb-10 ">
-						Features<br> <span class="font-[cherolina] normal-case text-7xl font-light">& Amenities </span>
-					</h1>
-					<div class="text-center text-xl mt-5 mb-5 ">
-						<div class="grid lg:grid-cols-4 grid-cols-2 justify-content-center gap-12">
-							<div>
-								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-filled/50/146ebe/golf.png" alt="golf"/>
-								<p class="mt-3">Golf Membership</p>
-							</div>
-							<div>
-								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/146ebe/air-conditioner.png" alt="air-conditioner"/>
-								<p class="mt-3">Air Conditioner</p>
-							</div>
-							<div class="">
-								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-filled/50/146ebe/golf-cart.png" alt="golf-cart"/>
-								<p>6 Seater Golf Cart Included</p>
-							</div>
-							<div>
-								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-filled/50/146ebe/wifi--v1.png" alt="wifi--v1"/>
-								<p class="mt-3">High Speed WI FI</p>
-							</div>
-							<div>
-								<img  class="mx-auto"width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/146ebe/beach.png" alt="beach"/>
-								<p class="mt-3">Beach Club</p>
-							</div>
-							<div>
-								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-filled/50/146ebe/golf-ball.png" alt="golf-ball"/>
-								<p class="mt-3">Golf Views</p>
-							</div>
-							<div>
-								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-filled/50/146ebe/tv.png" alt="tv"/>
-								<p class="mt-3">TV</p>
-							</div>
-							<div>
-								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/146ebe/grill--v2.png" alt="grill--v2"/>
-								<p class="mt-3">BBQ Grill</p>
-							</div>
-							<div>
-								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-filled/50/146ebe/dining-room.png" alt="dining-room"/>
-								<p class="mt-3">Outdoor Dining</p>
-							</div>
-							<div>
-								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/146ebe/conference-call--v1.png" alt="conference-call--v1"/>
-								<p class="mt-3">Sleeps Up to 8 Guests (6 adults MAX)</p>
-							</div>
-							<div>
-								<img class="mx-auto" width="50" height="50" src="https://img.icons8.com/ios-glyphs/50/146ebe/housekeeping.png" alt="housekeeping"/>
-								<p class="mt-3">Daily Housekeeping Service</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
+        <!-- Features & Amenitites -->
+        <section class="container w-11/12 mx-auto">
+            <div
+                class="flex flex-wrap justify-center sm:flex-nowrap gap-10 flex-col-reverse sm:flex-row"
+            >
+                <div class="sm:w-1/2">
+                    <img
+                        class="w-full lg:h-[90vh] h-[50vh] object-cover object-center"
+                        src="images/amenities/gallery-20.webp"
+                    />
+                </div>
+                <div class="sm:w-1/2 my-auto">
+                    <h1
+                        class="text-center text-[#144bab] font-bold text-5xl uppercase mb-10"
+                    >
+                        Features<br />
+                        <span
+                            class="font-[cherolina] normal-case text-7xl font-light"
+                            >& Amenities
+                        </span>
+                    </h1>
+                    <div class="text-center text-xl mt-5 mb-5">
+                        <div
+                            class="grid lg:grid-cols-4 grid-cols-2 justify-content-center gap-12"
+                        >
+                            <div>
+                                <img
+                                    class="mx-auto"
+                                    width="50"
+                                    height="50"
+                                    src="https://img.icons8.com/ios-filled/50/146ebe/golf.png"
+                                    alt="golf"
+                                />
+                                <p class="mt-3">Golf Membership</p>
+                            </div>
+                            <div>
+                                <img
+                                    class="mx-auto"
+                                    width="50"
+                                    height="50"
+                                    src="https://img.icons8.com/ios-glyphs/50/146ebe/air-conditioner.png"
+                                    alt="air-conditioner"
+                                />
+                                <p class="mt-3">Air Conditioner</p>
+                            </div>
+                            <div class="">
+                                <img
+                                    class="mx-auto"
+                                    width="50"
+                                    height="50"
+                                    src="https://img.icons8.com/ios-filled/50/146ebe/golf-cart.png"
+                                    alt="golf-cart"
+                                />
+                                <p>6 Seater Golf Cart Included</p>
+                            </div>
+                            <div>
+                                <img
+                                    class="mx-auto"
+                                    width="50"
+                                    height="50"
+                                    src="https://img.icons8.com/ios-filled/50/146ebe/wifi--v1.png"
+                                    alt="wifi--v1"
+                                />
+                                <p class="mt-3">High Speed WI FI</p>
+                            </div>
+                            <div>
+                                <img
+                                    class="mx-auto"
+                                    width="50"
+                                    height="50"
+                                    src="https://img.icons8.com/ios-glyphs/50/146ebe/beach.png"
+                                    alt="beach"
+                                />
+                                <p class="mt-3">Beach Club</p>
+                            </div>
+                            <div>
+                                <img
+                                    class="mx-auto"
+                                    width="50"
+                                    height="50"
+                                    src="https://img.icons8.com/ios-filled/50/146ebe/golf-ball.png"
+                                    alt="golf-ball"
+                                />
+                                <p class="mt-3">Golf Views</p>
+                            </div>
+                            <div>
+                                <img
+                                    class="mx-auto"
+                                    width="50"
+                                    height="50"
+                                    src="https://img.icons8.com/ios-filled/50/146ebe/tv.png"
+                                    alt="tv"
+                                />
+                                <p class="mt-3">TV</p>
+                            </div>
+                            <div>
+                                <img
+                                    class="mx-auto"
+                                    width="50"
+                                    height="50"
+                                    src="https://img.icons8.com/ios-glyphs/50/146ebe/grill--v2.png"
+                                    alt="grill--v2"
+                                />
+                                <p class="mt-3">BBQ Grill</p>
+                            </div>
+                            <div>
+                                <img
+                                    class="mx-auto"
+                                    width="50"
+                                    height="50"
+                                    src="https://img.icons8.com/ios-filled/50/146ebe/dining-room.png"
+                                    alt="dining-room"
+                                />
+                                <p class="mt-3">Outdoor Dining</p>
+                            </div>
+                            <div>
+                                <img
+                                    class="mx-auto"
+                                    width="50"
+                                    height="50"
+                                    src="https://img.icons8.com/ios-glyphs/50/146ebe/conference-call--v1.png"
+                                    alt="conference-call--v1"
+                                />
+                                <p class="mt-3">
+                                    Sleeps Up to 8 Guests (6 adults MAX)
+                                </p>
+                            </div>
+                            <div>
+                                <img
+                                    class="mx-auto"
+                                    width="50"
+                                    height="50"
+                                    src="https://img.icons8.com/ios-glyphs/50/146ebe/housekeeping.png"
+                                    alt="housekeeping"
+                                />
+                                <p class="mt-3">Daily Housekeeping Service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Gallery -->
         <section class="lg:my-32 my-12 container w-11/12 mx-auto" id="gallery">
@@ -203,269 +347,581 @@ import Banner from "../components/Banner.astro";
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="images/gallery-1.webp" alt="" class="h-[320px] object-cover"/>
+                        <img
+                            src="images/gallery-1.webp"
+                            alt=""
+                            class="h-[320px] object-cover"
+                        />
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/gallery-2.webp" alt="" class="h-[320px] object-cover"/>
+                        <img
+                            src="images/gallery-2.webp"
+                            alt=""
+                            class="h-[320px] object-cover"
+                        />
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/gallery-6.webp" alt="" class="h-[320px] object-cover"/>
+                        <img
+                            src="images/gallery-6.webp"
+                            alt=""
+                            class="h-[320px] object-cover"
+                        />
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/gallery-7.webp" alt="" class="h-[320px] object-cover"/>
+                        <img
+                            src="images/gallery-7.webp"
+                            alt=""
+                            class="h-[320px] object-cover"
+                        />
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/gallery-8.webp" alt="" class="h-[320px] object-cover"/>
+                        <img
+                            src="images/gallery-8.webp"
+                            alt=""
+                            class="h-[320px] object-cover"
+                        />
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/gallery-10.webp" alt="" class="h-[320px] object-cover"/>
+                        <img
+                            src="images/gallery-10.webp"
+                            alt=""
+                            class="h-[320px] object-cover"
+                        />
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/gallery-11.webp" alt="" class="h-[320px] object-cover"/>
+                        <img
+                            src="images/gallery-11.webp"
+                            alt=""
+                            class="h-[320px] object-cover"
+                        />
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/gallery-12.webp" alt="" class="h-[320px] object-cover"/>
+                        <img
+                            src="images/gallery-12.webp"
+                            alt=""
+                            class="h-[320px] object-cover"
+                        />
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/gallery-16.webp" alt="" class="h-[320px] object-cover"/>
+                        <img
+                            src="images/gallery-16.webp"
+                            alt=""
+                            class="h-[320px] object-cover"
+                        />
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </section>
 
+        <!-- Reviews -->
+        <section class="bg-gray-50">
+            <div
+                class="mx-auto container w-full px-4 py-12 sm:px-6 lg:px-0 lg:py-16"
+            >
+                <div class="md:flex md:items-end md:justify-between">
+                    <div class="max-w-xl">
+                        <h2
+                            class="text-[#144bab] font-bold text-5xl mb-10 uppercase"
+                        >
+                            Reviews
+                        </h2>
+                    </div>
+                </div>
 
-		<!-- Reviews -->
-		<section class="bg-gray-50">
-			<div class="mx-auto container w-11/12 px-4 py-12 sm:px-6 lg:px-0 lg:py-16">
-				<div class="md:flex md:items-end md:justify-between">
-					<div class="max-w-xl">
-						<h2 class="text-[#144bab] font-bold text-5xl mb-10 uppercase">
-							Reviews
-						</h2>
-					</div>
-				</div>
-		
-				<div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
-					<blockquote class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8">
-						<div>
-							<div class="flex gap-0.5 text-yellow-500">
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-							</div>
-				
-							<div class="mt-4">
-							<p class="text-3xl lg:text-4xl font-bold text-[#144bab]">
-								Joel
-							</p>
-							<p class="mt-4 lg:text-lg text-base font-light">
-								We had an amazing vacation staying at Ana Lucia’s 
-								place. Everything about her condo is great, especially 
-								Claudia! Her cooking was incredible, she made us feel 
-								at home and treated us like family. We’ll be looking 
-								forward to visiting here again soon!
-							</p>
-							</div>
-						</div>
-					</blockquote>
-			
-					<blockquote class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8">
-						<div>
-							<div class="flex gap-0.5 text-yellow-500">
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-							</div>
-						<div class="mt-4">
-						<p class="text-3xl lg:text-4xl font-bold text-[#144bab]">
-							Steve
-						</p>
-						<p class="mt-4 lg:text-lg text-base font-light">
-							Wow, a truly beautiful home, that worked perfectly 
-							for our family of six, including two young grandsons. 
-							We had a wonderful time and were well taken care of by 
-							Claudia, a wonderful woman who made great breakfasts 
-							every day, and kept the house sparkling clean. Highly recommend.
-						</p>
-						</div>
-					</div>
-					</blockquote>
-					<blockquote class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8">
-						<div>
-							<div class="flex gap-0.5 text-yellow-500">
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-							</div>
-			
-							<div class="mt-4">
-								<p class="text-3xl lg:text-4xl font-bold text-[#144bab]">
-									Nikki
-								</p>
-								<p class="mt-4 lg:text-lg text-base font-light">
-									This property is beautifully appointed, modern but relaxing. 
-									The position of the unit in our opinion is the best in the complex.
-									It was lovely to be able to step out of your patio door 
-									and walk straight up to a strip of pool that links two main pools.
-									Our housekeeper was very sweet and a good cook!
-									We will definitely come again
-								</p>
-							</div>
-						</div>
-					</blockquote>
+                    <div class="swiper mySwiper2 px-10">
+                        <div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<blockquote
+                                class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8"
+                            >
+                                <div>
+                                    <div class="flex gap-0.5 text-yellow-500">
+                                        <svg
+                                            class="h-5 w-5"
+                                            fill="currentColor"
+                                            viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            class="h-5 w-5"
+                                            fill="currentColor"
+                                            viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            class="h-5 w-5"
+                                            fill="currentColor"
+                                            viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            class="h-5 w-5"
+                                            fill="currentColor"
+                                            viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            ></path>
+                                        </svg>
+                                        <svg
+                                            class="h-5 w-5"
+                                            fill="currentColor"
+                                            viewBox="0 0 20 20"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            ></path>
+                                        </svg>
+                                    </div>
 
-
-
-
-					<blockquote class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8">
-						<div>
-							<div class="flex gap-0.5 text-yellow-500">
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
+                                    <div class="mt-4">
+                                        <p
+                                            class="text-3xl lg:text-4xl font-bold text-[#144bab]"
+                                        >
+                                            Joel
+                                        </p>
+                                        <p
+                                            class="mt-4 lg:text-lg text-base font-light"
+                                        >
+                                            We had an amazing vacation staying
+                                            at Ana Lucia’s place. Everything
+                                            about her condo is great, especially
+                                            Claudia! Her cooking was incredible,
+                                            she made us feel at home and treated
+                                            us like family. We’ll be looking
+                                            forward to visiting here again soon!
+                                        </p>
+                                    </div>
+                                </div>
+                            	</blockquote>
 							</div>
-				
-							<div class="mt-4">
-							<p class="text-3xl lg:text-4xl font-bold text-[#144bab]">
-								Warren L.
-							</p>
-							<p class="mt-4 lg:text-lg text-base font-light">
-								WWe loved the property! Had a couple minor issues with 
-								golf cart and power outage but both were solved. Claudia 
-								was incredible! Breakfast was fabulous and she went above 
-								and beyond. We will be back!
-							</p>
+							<div class="swiper-slide">
+								<blockquote
+									class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8"
+								>
+									<div>
+										<div class="flex gap-0.5 text-yellow-500">
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+										</div>
+										<div class="mt-4">
+											<p
+												class="text-3xl lg:text-4xl font-bold text-[#144bab]"
+											>
+												Steve
+											</p>
+											<p
+												class="mt-4 lg:text-lg text-base font-light"
+											>
+												Wow, a truly beautiful home, that
+												worked perfectly for our family of
+												six, including two young grandsons.
+												We had a wonderful time and were
+												well taken care of by Claudia, a
+												wonderful woman who made great
+												breakfasts every day, and kept the
+												house sparkling clean. Highly
+												recommend.
+											</p>
+										</div>
+									</div>
+								</blockquote>
 							</div>
-						</div>
-					</blockquote>
-					<blockquote class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8">
-						<div>
-							<div class="flex gap-0.5 text-yellow-500">
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-							</div>
-				
-							<div class="mt-4">
-							<p class="text-3xl lg:text-4xl font-bold text-[#144bab]">
-								Suzanne G.
-							</p>
-							<p class="mt-4 lg:text-lg text-base font-light">
-								Our stay was beautiful. The unit was great, 
-								the location was great, and Caludia was AMAZING.
-							</p>
-							</div>
-						</div>
-					</blockquote>
+							<div class="swiper-slide">
+								<blockquote
+									class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8"
+								>
+									<div>
+										<div class="flex gap-0.5 text-yellow-500">
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+										</div>
 
-					<blockquote class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8">
-						<div>
-							<div class="flex gap-0.5 text-yellow-500">
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
-								<svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-									<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-								</svg>
+										<div class="mt-4">
+											<p
+												class="text-3xl lg:text-4xl font-bold text-[#144bab]"
+											>
+												Nikki
+											</p>
+											<p
+												class="mt-4 lg:text-lg text-base font-light"
+											>
+												This property is beautifully
+												appointed, modern but relaxing. The
+												position of the unit in our opinion
+												is the best in the complex. It was
+												lovely to be able to step out of
+												your patio door and walk straight up
+												to a strip of pool that links two
+												main pools. Our housekeeper was very
+												sweet and a good cook! We will
+												definitely come again
+											</p>
+										</div>
+									</div>
+								</blockquote>
 							</div>
-				
-							<div class="mt-4">
-								<p class="text-3xl lg:text-4xl font-bold text-[#144bab]">
-									Brian R.
-								</p>
-								<p class="mt-4 lg:text-lg text-base font-light">
-									Our family was so thrilled with our experience here! 
-									The setting was beautiful as well as the living space 
-									and amenities. Also, Sonia (manager) and Claudia 
-									(house staff) were so gracious and kind to meet all 
-									of our family's needs. And, whenever any issues arose, 
-									they quickly were on it. We will be back!
-								</p>
+							<div class="swiper-slide">
+								<blockquote
+									class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8"
+								>
+									<div>
+										<div class="flex gap-0.5 text-yellow-500">
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+										</div>
+
+										<div class="mt-4">
+											<p
+												class="text-3xl lg:text-4xl font-bold text-[#144bab]"
+											>
+												Warren L.
+											</p>
+											<p
+												class="mt-4 lg:text-lg text-base font-light"
+											>
+												WWe loved the property! Had a couple
+												minor issues with golf cart and
+												power outage but both were solved.
+												Claudia was incredible! Breakfast
+												was fabulous and she went above and
+												beyond. We will be back!
+											</p>
+										</div>
+									</div>
+								</blockquote>
 							</div>
-						</div>
-					</blockquote>
-				</div>
-			</div>
-		</section>
+							<div class="swiper-slide">
+								<blockquote
+									class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8"
+								>
+									<div>
+										<div class="flex gap-0.5 text-yellow-500">
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+										</div>
 
+										<div class="mt-4">
+											<p
+												class="text-3xl lg:text-4xl font-bold text-[#144bab]"
+											>
+												Suzanne G.
+											</p>
+											<p
+												class="mt-4 lg:text-lg text-base font-light"
+											>
+												Our stay was beautiful. The unit was
+												great, the location was great, and
+												Caludia was AMAZING.
+											</p>
+										</div>
+									</div>
+								</blockquote>
+							</div>
+							<div class="swiper-slide">
+								<blockquote
+									class="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8"
+								>
+									<div>
+										<div class="flex gap-0.5 text-yellow-500">
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+											<svg
+												class="h-5 w-5"
+												fill="currentColor"
+												viewBox="0 0 20 20"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+												></path>
+											</svg>
+										</div>
 
+										<div class="mt-4">
+											<p
+												class="text-3xl lg:text-4xl font-bold text-[#144bab]"
+											>
+												Brian R.
+											</p>
+											<p
+												class="mt-4 lg:text-lg text-base font-light"
+											>
+												Our family was so thrilled with our
+												experience here! The setting was
+												beautiful as well as the living
+												space and amenities. Also, Sonia
+												(manager) and Claudia (house staff)
+												were so gracious and kind to meet
+												all of our family's needs. And,
+												whenever any issues arose, they
+												quickly were on it. We will be back!
+											</p>
+										</div>
+									</div>
+								</blockquote>
+							</div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+            </div>
+        </section>
 
         <!-- Ubicacion -->
         <section class="container w-11/12 mx-auto hidden">
             <div>
-                <h2 class="text-[#144bab] font-bold text-5xl mb-10 text-center uppercase">
+                <h2
+                    class="text-[#144bab] font-bold text-5xl mb-10 text-center uppercase"
+                >
                     Locations
                 </h2>
                 <img class="w-full" src="images/Location.webp" />
@@ -484,24 +940,36 @@ import Banner from "../components/Banner.astro";
                     </p>
                     <ul class="text-xl flex gap-4 flex-col mt-5 mb-12">
                         <p class="font-bold">Owner: Ricardo</p>
-                        <a href="tel:+523222940241"><li>
-                                <i class="fa-solid fa-phone text-[#144bab] text-2xl"></i> +52 322 294 0241
-                            </li></a>
+                        <a href="tel:+523222940241"
+                            ><li>
+                                <i
+                                    class="fa-solid fa-phone text-[#144bab] text-2xl"
+                                ></i> +52 322 294 0241
+                            </li></a
+                        >
                         <p class="font-bold">
                             Property Manager / Administrador
                         </p>
                         <a href="tel:+523221175716">
-							<li>
-                                <i class="fa-solid fa-phone text-[#144bab] text-2xl"></i> +52 322 117 5716
+                            <li>
+                                <i
+                                    class="fa-solid fa-phone text-[#144bab] text-2xl"
+                                ></i> +52 322 117 5716
                             </li>
-						</a>
+                        </a>
                     </ul>
                 </div>
                 <div class="md:w-2/3">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d59690.27877457118!2d-105.4927425!3d20.7652824!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDQ2JzIyLjIiTiAxMDXCsDMxJzMxLjEiVw!5e0!3m2!1sen!2smx!4v1697844014495!5m2!1sen!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d59690.27877457118!2d-105.4927425!3d20.7652824!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDQ2JzIyLjIiTiAxMDXCsDMxJzMxLjEiVw!5e0!3m2!1sen!2smx!4v1697844014495!5m2!1sen!2smx"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </section>
     </main>
 </Layout>
-
