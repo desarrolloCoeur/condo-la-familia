@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Banner from "../components/Banner.astro";
+import LastBlogs from "../components/LastBlogs.astro";
 ---
 
 <Layout title="Condo La Familia in Punta de Mita: Your Perfect Vacation Home">
@@ -416,11 +417,16 @@ import Banner from "../components/Banner.astro";
             </div>
         </section>
 
+
+        <!-- blogs -->
+        <LastBlogs />
+
+
+
+
         <!-- Reviews -->
         <section class="bg-gray-50">
-            <div
-                class="mx-auto container w-full px-4 py-12 sm:px-6 lg:px-0 lg:py-16"
-            >
+            <div class="mx-auto container w-11/12 px-4 py-12 sm:px-6 lg:px-0 lg:py-16 ">
                 <div class="md:flex md:items-end md:justify-between">
                     <div class="max-w-xl">
                         <h2
@@ -928,6 +934,7 @@ import Banner from "../components/Banner.astro";
             </div>
         </section>
 
+        <!-- contact -->
         <section class="lg:my-32 my-12 container w-11/12 mx-auto" id="contacto">
             <div class="flex gap-5 flex-col md:flex-row">
                 <div class="md:w-1/3 text-center md:text-left">
