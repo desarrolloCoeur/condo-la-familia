@@ -1,0 +1,55 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+		<Layout title='Condo La Familia'>
+		<main>
+					
+			<div class="relative h-[70vh]">
+				<img src="/images/amenities/gallery-24.webp" class="h-[70vh] w-full object-cover ">
+				<div class="absolute top-0 bottom-0 left-0 right-0 flex items-end px-6 p-10 lg:p-20 gradient-bg">
+					<div class="mx-auto w-11/12  max-w-screen-xl text-center lg:text-left">
+						<h2 class="text-5xl lg:text-6xl uppercase text-white mb-8 font-semibold">Blogs</h2>
+					</div>
+				</div>
+			</div>
+			
+			<section class="lg:my-28 my-12 container w-11/12 mx-auto">
+				<div class="grid lg:grid-cols-4 grid-cols-1 gap-6">
+				{
+					posts.map((post) => (
+					<article class="relative overflow-hidden rounded-lg w-full">
+						<img width={720} height={360} src={post.data.heroImage} class="absolute inset-0 h-full w-full object-cover"  />
+						
+						<div class="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64 h-full">
+							<div class="p-4 sm:p-6">
+								
+								<a href={`/blog/${post.slug}/`}>
+									<h2 class="mt-0.5 text-lg text-white">
+										{post.data.title}
+									</h2>
+								</a>
+								<p class="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+									{post.data.description}
+								</p>
+								<p class="mt-3 text-white">
+									<FormattedDate date={post.data.pubDate} />
+								</p>
+							</div>
+						</div>
+						</article>
+					))
+				}
+			</div>
+			</section>
+		</main>
+	</Layout>
+</html>
