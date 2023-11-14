@@ -42,6 +42,15 @@ header{
     background-size: cover;
     background-position: center;
 }
+#promotional-2 {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.8) 100%,
+            rgba(0, 0, 0, 0.4) 100%
+        ),
+        url(images/amenities/gallery-22.webp);
+    background-size: cover;
+    background-position: center;
+}
 
 .gradient-bg {
     background: rgb(0, 0, 0);
