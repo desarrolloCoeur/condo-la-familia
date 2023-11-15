@@ -12,14 +12,13 @@ h3{
     font-family: 'caviardreams';
     src: url('/fonts/CaviarDreams.ttf');
 }
-p, a{
+p, a, li{
     font-family: caviardreams;
+    letter-spacing: 2.5px;
 }
 
 :root {
     --swiper-theme-color: #144bab;
-
-    
 }
 
 header{
@@ -45,7 +44,7 @@ header{
 #promotional-2 {
     background: linear-gradient(
             rgba(0, 0, 0, 0.8) 100%,
-            rgba(0, 0, 0, 0.4) 100%
+            rgba(0, 0, 0, 0.8) 100%
         ),
         url(images/amenities/gallery-22.webp);
     background-size: cover;
