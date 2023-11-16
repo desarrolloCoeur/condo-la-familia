@@ -59,3 +59,11 @@ header{
         rgba(0, 0, 0, 0) 100%
     );
 }
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
