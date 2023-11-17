@@ -98,6 +98,19 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
+  var swiper = new Swiper(".mySwiper3", {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
   window.onload = function () {
     document.getElementById("captcha").innerHTML = "";
     var charsArray =

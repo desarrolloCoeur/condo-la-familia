@@ -60,6 +60,17 @@ header{
     );
 }
 
+.mySwiper3 .swiper-slide::after{
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #000, #00000060);
+    opacity: .2;  
+}
+
 .red{
     background-color: red;
 }
